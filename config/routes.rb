@@ -8,17 +8,12 @@ Rails.application.routes.draw do
   namespace :api do
     # EVENTS 
     ### v2 ###
-    # get 'events' => 'events#index'
-    # get 'events/:id' => 'events#index_by_current_event'
-
-    # QUESTIONS 
-    ### v3 ###
-    # get 'questions' => 'questions#index' # all questions across events
-    # post 'questions' => 'questions#create'
+    # resources :events only: [:index]
     
-    # EVENT QUESTIONS 
+    # QUESTIONS, EVENT QUESTIONS
     ### v2 ###
-    # get 'events/:id/questions' => 'eventquestions#questions'
+    ### DELETE FOR V3 HANDLED IN RESOURCES ###
+    # resources :event_questions, only: [:index]
 
     ### v3 ###
     ## revisit assiging from within global questions, & within eventquestions
