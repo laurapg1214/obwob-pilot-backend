@@ -21,12 +21,11 @@ Rails.application.routes.draw do
     # get 'events/:id/questions' => 'eventquestions#questions'
 
     ### v3 ###
-    # single resource for updating questions (active/inactive, assigned/unassigned, complete/incomplete)
-    # resources :events do
-      # resources :questions, only: [:index, :update]
-      ## :index → GET /questions → Maps to index, used to list all questions
-      ## :update → PUT /questions/:id → Maps to update, used to update a specific question
-    # end
+    ## revisit assiging from within global questions, & within eventquestions
+    ## resource for displaying, creating, assigning & updating questions (active/inactive, assigned/unassigned)
+    # resources :questions, only: [:index, :create, :update, :assign]
+    ## resource for displaying, creating & updating questions within events (assigned/unassigned, complete/incomplete)
+    # resources :event_questions, only: [:index, :create, :update]
     
     # SESSIONS
     post 'sessions' => 'sessions#create'
