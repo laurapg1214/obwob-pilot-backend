@@ -13,7 +13,10 @@ Rails.application.routes.draw do
     # QUESTIONS
     # list all questions assigned to an event
     resources :events do
-      resources :questions, only: [:index]
+      resources :questions, only: [:index] do
+        # route for pushing question to participants
+        post 'push', on: :member
+      end
     end
 
     ### v3 ###
