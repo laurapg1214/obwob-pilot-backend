@@ -10,17 +10,16 @@ Rails.application.routes.draw do
     ### v2 ###
     # resources :events only: [:index]
     
-    # QUESTIONS, EVENT QUESTIONS
-    ### v2 ###
-    ### DELETE FOR V3 HANDLED IN RESOURCES ###
-    # resources :event_questions, only: [:index]
+    # QUESTIONS
+    # list all questions assigned to an event
+    resources :events do
+      resources :questions, only: [:index]
+    end
 
     ### v3 ###
-    ## revisit assiging from within global questions, & within eventquestions
-    ## resource for displaying, creating, assigning & updating questions (active/inactive, assigned/unassigned)
+    ## TODO: revisit whether assign is an update or sep function ##
+    ## displaying, creating, assigning & updating questions (active/inactive, assigned/unassigned)
     # resources :questions, only: [:index, :create, :update, :assign]
-    ## resource for displaying, creating & updating questions within events (assigned/unassigned, complete/incomplete)
-    # resources :event_questions, only: [:index, :create, :update]
     
     # SESSIONS
     post 'sessions' => 'sessions#create'
