@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     # resources :events only: [:index]
     
     # QUESTIONS & RESPONSES
-    resources :events do
+    resources :events, only: [:index] do
       resources :questions, only: [:index] do
         # route for pushing question to participants
         post 'push', on: :member

@@ -3,7 +3,6 @@ class Api::SessionsController < ApplicationController
     # extract data from the QR code
     token = params[:qr_code_token]
     @user = User.find_by(authentication_token: token)
-
     unless @user
       render json: { success: false, error: 'Invalid QR code' }, status: :unauthorized
       return
@@ -20,7 +19,6 @@ class Api::SessionsController < ApplicationController
   def authenticated 
     token = cookies.permanent.signed[:obwob_session_token]
     session = Session.find_by(token: token)
-
     unless session
       render json: { authenticated: false }, status: :unauthorized
       return
@@ -36,7 +34,6 @@ class Api::SessionsController < ApplicationController
   def destroy
     token = cookies.permanent.signed[:obwob_session_token]
     session = Session.find_by(token: token)
-
     unless session&.destroy
       render json: { success: false }, status: :not_found
       return
