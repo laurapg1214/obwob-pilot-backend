@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_01_13_170536) do
+ActiveRecord::Schema[7.2].define(version: 2025_01_21_114231) do
   create_table "events", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -29,5 +29,9 @@ ActiveRecord::Schema[7.2].define(version: 2025_01_13_170536) do
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "uuid", null: false
+    t.integer "role", default: 0, null: false
+    t.string "name"
+    t.index ["uuid"], name: "index_users_on_uuid", unique: true
   end
 end
