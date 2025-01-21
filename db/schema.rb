@@ -10,20 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_01_21_114231) do
+ActiveRecord::Schema[7.2].define(version: 2025_01_21_152122) do
   create_table "events", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.date "date"
+    t.time "time"
+  end
+
+  create_table "events_questions", id: false, force: :cascade do |t|
+    t.integer "event_id", null: false
+    t.integer "question_id", null: false
+    t.index ["event_id"], name: "index_events_questions_on_event_id"
+    t.index ["question_id"], name: "index_events_questions_on_question_id"
+  end
+
+  create_table "events_users", id: false, force: :cascade do |t|
+    t.integer "event_id", null: false
+    t.integer "user_id", null: false
+    t.index ["event_id"], name: "index_events_users_on_event_id"
+    t.index ["user_id"], name: "index_events_users_on_user_id"
   end
 
   create_table "questions", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "type", default: 0
+    t.string "content"
   end
 
   create_table "responses", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.integer "event_id", null: false
+    t.integer "question_id", null: false
+    t.string "content"
+    t.index ["event_id"], name: "index_responses_on_event_id"
+    t.index ["question_id"], name: "index_responses_on_question_id"
+    t.index ["user_id"], name: "index_responses_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -34,4 +60,8 @@ ActiveRecord::Schema[7.2].define(version: 2025_01_21_114231) do
     t.string "name"
     t.index ["uuid"], name: "index_users_on_uuid", unique: true
   end
+
+  add_foreign_key "responses", "events"
+  add_foreign_key "responses", "questions"
+  add_foreign_key "responses", "users"
 end
