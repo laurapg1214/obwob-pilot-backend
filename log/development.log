@@ -610,3 +610,1233 @@ Migrating to AddDefaultToUsers (20250124120629)
   [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250124120629') RETURNING "version"[0m
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.9ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 12:32:38.927319"], ["updated_at", "2025-01-24 12:32:38.927319"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 12:32:38.919510"], ["default", 1]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.8ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 12:35:50.857722"], ["updated_at", "2025-01-24 12:35:50.857722"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 12:35:50.852847"], ["default", 1]]
+  [1m[36mTRANSACTION (12.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (9.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_questions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "events_questions" ("event_id" integer NOT NULL, "question_id" integer NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_event_id" ON "events_questions" ("event_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_question_id" ON "events_questions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "events_users" ("event_id" integer NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_event_id" ON "events_users" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_user_id" ON "events_users" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "type" integer DEFAULT 0, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uuid" ON "users" ("uuid")[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (4.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_2bd9a0753e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250124120629)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250124120344),
+(20250124120327),
+(20250124120313),
+(20250121152122),
+(20250121151831),
+(20250121150757),
+(20250121150544),
+(20250121150335),
+(20250121144212),
+(20250121141509),
+(20250121141031),
+(20250121140314),
+(20250121135706),
+(20250121114231),
+(20250121110756),
+(20250121105636),
+(20250113170536),
+(20250113170422),
+(20250113170408),
+(20250113170401);[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-01-24 13:00:24.007546', '2025-01-24 13:00:24.007548') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'ec9113665c717264a15f0566c3b8763dc91ae473', '2025-01-24 13:00:24.011995', '2025-01-24 13:00:24.011997') RETURNING "key"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_questions" ("event_id" integer NOT NULL, "question_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_event_id" ON "events_questions" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_question_id" ON "events_questions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_users" ("event_id" integer NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_event_id" ON "events_users" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_user_id" ON "events_users" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "type" integer DEFAULT 0, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uuid" ON "users" ("uuid")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_2bd9a0753e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250124120629)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250124120344),
+(20250124120327),
+(20250124120313),
+(20250121152122),
+(20250121151831),
+(20250121150757),
+(20250121150544),
+(20250121150335),
+(20250121144212),
+(20250121141509),
+(20250121141031),
+(20250121140314),
+(20250121135706),
+(20250121114231),
+(20250121110756),
+(20250121105636),
+(20250113170536),
+(20250113170422),
+(20250113170408),
+(20250113170401);[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-01-24 13:00:24.114957', '2025-01-24 13:00:24.114970') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-01-24 13:00:24.117428' WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'ec9113665c717264a15f0566c3b8763dc91ae473', '2025-01-24 13:00:24.119069', '2025-01-24 13:00:24.119070') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.0ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:00:24.154765"], ["updated_at", "2025-01-24 13:00:24.154765"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:00:24.150589"], ["default", 1]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (3.5ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:00:36.536234"], ["updated_at", "2025-01-24 13:00:36.536234"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:00:36.528718"], ["default", 1]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDefaultToQuestionsType (20250124130313)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "type" integer DEFAULT 0, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","created_at","updated_at","type","content","default")
+                     SELECT "id","created_at","updated_at","type","content","default" FROM "questions"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "type" integer DEFAULT 0, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("id","created_at","updated_at","type","content","default")
+                     SELECT "id","created_at","updated_at","type","content","default" FROM "aquestions"[0m
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250124130313') RETURNING "version"[0m
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (0.9ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:04:00.102691"], ["updated_at", "2025-01-24 13:04:00.102691"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:04:00.098243"], ["default", 1]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeTypeColumnName (20250124130903)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" integer DEFAULT 0, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","created_at","updated_at","question_type","content","default")
+                     SELECT "id","created_at","updated_at","type","content","default" FROM "questions"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" integer DEFAULT 0, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","created_at","updated_at","question_type","content","default")
+                     SELECT "id","created_at","updated_at","question_type","content","default" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250124130903') RETURNING "version"[0m
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:11:51.429931"], ["updated_at", "2025-01-24 13:11:51.429931"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:11:51.423947"], ["default", 1]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.2ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:12:35.069235"], ["updated_at", "2025-01-24 13:12:35.069235"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:12:35.064426"], ["default", 1]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.5ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:13:53.176064"], ["updated_at", "2025-01-24 13:13:53.176064"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:13:53.171894"], ["default", 1]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.4ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:14:27.085161"], ["updated_at", "2025-01-24 13:14:27.085161"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:14:27.080966"], ["default", 1]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (4.0ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:18:26.777699"], ["updated_at", "2025-01-24 13:18:26.777699"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:18:26.766134"], ["default", 1]]
+  [1m[36mTRANSACTION (13.3ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (2.9ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:31:43.697090"], ["updated_at", "2025-01-24 13:31:43.697090"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:31:43.689845"], ["default", 1]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.5ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:32:11.782887"], ["updated_at", "2025-01-24 13:32:11.782887"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:32:11.777906"], ["default", 1]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (0.9ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:32:22.940725"], ["updated_at", "2025-01-24 13:32:22.940725"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:32:22.935913"], ["default", 1]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.4ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:34:31.831525"], ["updated_at", "2025-01-24 13:34:31.831525"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:34:31.826357"], ["default", 1]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.2ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:34:55.688188"], ["updated_at", "2025-01-24 13:34:55.688188"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:34:55.683901"], ["default", 1]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.2ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:37:09.510028"], ["updated_at", "2025-01-24 13:37:09.510028"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:37:09.500442"], ["default", 1]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.0ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:38:47.094857"], ["updated_at", "2025-01-24 13:38:47.094857"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:38:47.090103"], ["default", 1]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question_type", "content", "default") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:45:08.230841"], ["updated_at", "2025-01-24 13:45:08.230841"], ["question_type", 0], ["content", "Do you have any feedback?"], ["default", 1]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question_type", "content", "default") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:46:30.716753"], ["updated_at", "2025-01-24 13:46:30.716753"], ["question_type", 0], ["content", "Do you have any feedback?"], ["default", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question_type", "content", "default") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:48:05.341929"], ["updated_at", "2025-01-24 13:48:05.341929"], ["question_type", 0], ["content", "Do you have any feedback?"], ["default", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question_type", "content", "default") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:48:53.870536"], ["updated_at", "2025-01-24 13:48:53.870536"], ["question_type", 0], ["content", "Do you have any feedback?"], ["default", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (6.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_questions" ("event_id" integer NOT NULL, "question_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_event_id" ON "events_questions" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_question_id" ON "events_questions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_users" ("event_id" integer NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_event_id" ON "events_users" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_user_id" ON "events_users" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" integer DEFAULT 0, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uuid" ON "users" ("uuid")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_2bd9a0753e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250124130903)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250124130313),
+(20250124120629),
+(20250124120344),
+(20250124120327),
+(20250124120313),
+(20250121152122),
+(20250121151831),
+(20250121150757),
+(20250121150544),
+(20250121150335),
+(20250121144212),
+(20250121141509),
+(20250121141031),
+(20250121140314),
+(20250121135706),
+(20250121114231),
+(20250121110756),
+(20250121105636),
+(20250113170536),
+(20250113170422),
+(20250113170408),
+(20250113170401);[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-01-24 13:55:07.211949', '2025-01-24 13:55:07.211951') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'c5e5f8bc374565ba26c980853d60a981781b233a', '2025-01-24 13:55:07.217363', '2025-01-24 13:55:07.217365') RETURNING "key"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_questions" ("event_id" integer NOT NULL, "question_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_event_id" ON "events_questions" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_question_id" ON "events_questions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_users" ("event_id" integer NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_event_id" ON "events_users" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_user_id" ON "events_users" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" integer DEFAULT 0, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uuid" ON "users" ("uuid")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default" boolean DEFAULT 0, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_2bd9a0753e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250124130903)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250124130313),
+(20250124120629),
+(20250124120344),
+(20250124120327),
+(20250124120313),
+(20250121152122),
+(20250121151831),
+(20250121150757),
+(20250121150544),
+(20250121150335),
+(20250121144212),
+(20250121141509),
+(20250121141031),
+(20250121140314),
+(20250121135706),
+(20250121114231),
+(20250121110756),
+(20250121105636),
+(20250113170536),
+(20250113170422),
+(20250113170408),
+(20250113170401);[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-01-24 13:55:07.321138', '2025-01-24 13:55:07.321140') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-01-24 13:55:07.322415' WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'c5e5f8bc374565ba26c980853d60a981781b233a', '2025-01-24 13:55:07.323819', '2025-01-24 13:55:07.323821') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (0.9ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 13:55:07.352835"], ["updated_at", "2025-01-24 13:55:07.352835"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 13:55:07.349011"], ["default", 1]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mQuestion Load (8.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveQuestionTypeFromQuestions (20250124140538)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" integer DEFAULT 0, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","created_at","updated_at","question_type","content","default")
+                     SELECT "id","created_at","updated_at","question_type","content","default" FROM "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "content" varchar, "default" boolean DEFAULT 0)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","created_at","updated_at","content","default")
+                     SELECT "id","created_at","updated_at","content","default" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250124140538') RETURNING "version"[0m
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (1.8ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 14:08:49.517457"], ["updated_at", "2025-01-24 14:08:49.517457"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 14:08:49.513769"], ["default", 1]]
+  [1m[36mTRANSACTION (13.2ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "content", "default") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 14:08:49.538339"], ["updated_at", "2025-01-24 14:08:49.538339"], ["content", "Do you have any feedback?"], ["default", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveQuestionTypeFromQuestions (20250124140538)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "questions" ADD "question_type" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20250124140538'[0m
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeDefaultColumnToDefaultRecord (20250124141930)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevents" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default_record" boolean DEFAULT 0)[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "aevents" ("id","created_at","updated_at","name","date","time","default_record")
+                     SELECT "id","created_at","updated_at","name","date","time","default" FROM "events"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default_record" boolean DEFAULT 0)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "events" ("id","created_at","updated_at","name","date","time","default_record")
+                     SELECT "id","created_at","updated_at","name","date","time","default_record" FROM "aevents"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "aevents"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, "question_type" integer)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","created_at","updated_at","content","default_record","question_type")
+                     SELECT "id","created_at","updated_at","content","default","question_type" FROM "questions"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, "question_type" integer)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("id","created_at","updated_at","content","default_record","question_type")
+                     SELECT "id","created_at","updated_at","content","default_record","question_type" FROM "aquestions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default" FROM "responses"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_2bd9a0753e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aresponses"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_uuid" ON "ausers" ("uuid")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "ausers" ("id","created_at","updated_at","uuid","role","name","default_record")
+                     SELECT "id","created_at","updated_at","uuid","role","name","default" FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uuid" ON "users" ("uuid")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "users" ("id","created_at","updated_at","uuid","role","name","default_record")
+                     SELECT "id","created_at","updated_at","uuid","role","name","default_record" FROM "ausers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250124141930') RETURNING "version"[0m
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (2.7ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default_record") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 14:22:41.215874"], ["updated_at", "2025-01-24 14:22:41.215874"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 14:22:41.203100"], ["default_record", 1]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mQuestion Create (1.2ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "content", "default_record", "question_type") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 14:22:41.235527"], ["updated_at", "2025-01-24 14:22:41.235527"], ["content", "Do you have any feedback?"], ["default_record", 1], ["question_type", 0]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (4.9ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default_record") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 15:25:09.331405"], ["updated_at", "2025-01-24 15:25:09.331405"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 15:25:09.308725"], ["default_record", 1]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mQuestion Create (3.9ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "content", "default_record", "question_type") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 15:25:09.368830"], ["updated_at", "2025-01-24 15:25:09.368830"], ["content", "Do you have any feedback?"], ["default_record", 1], ["question_type", 0]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (6.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_questions" ("event_id" integer NOT NULL, "question_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_event_id" ON "events_questions" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_question_id" ON "events_questions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_users"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "events_users" ("event_id" integer NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_event_id" ON "events_users" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_user_id" ON "events_users" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, "question_type" integer)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uuid" ON "users" ("uuid")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_2bd9a0753e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250124141930)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250124130903),
+(20250124130313),
+(20250124120629),
+(20250124120344),
+(20250124120327),
+(20250124120313),
+(20250121152122),
+(20250121151831),
+(20250121150757),
+(20250121150544),
+(20250121150335),
+(20250121144212),
+(20250121141509),
+(20250121141031),
+(20250121140314),
+(20250121135706),
+(20250121114231),
+(20250121110756),
+(20250121105636),
+(20250113170536),
+(20250113170422),
+(20250113170408),
+(20250113170401);[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-01-24 15:38:27.272818', '2025-01-24 15:38:27.272820') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '1c5ac4ecc2c59b32980cec08dfaad1683f9d1c55', '2025-01-24 15:38:27.275051', '2025-01-24 15:38:27.275052') RETURNING "key"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "events_questions" ("event_id" integer NOT NULL, "question_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_event_id" ON "events_questions" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_question_id" ON "events_questions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_users" ("event_id" integer NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_event_id" ON "events_users" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_user_id" ON "events_users" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, "question_type" integer)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uuid" ON "users" ("uuid")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "responses"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aresponses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_user_id" ON "aresponses" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_question_id" ON "aresponses" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aresponses_on_event_id" ON "aresponses" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aresponses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "responses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_325af149a3"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+, CONSTRAINT "fk_rails_26f4d74572"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_2bd9a0753e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_event_id" ON "responses" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_responses_on_question_id" ON "responses" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_responses_on_user_id" ON "responses" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "responses" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aresponses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aresponses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250124141930)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250124130903),
+(20250124130313),
+(20250124120629),
+(20250124120344),
+(20250124120327),
+(20250124120313),
+(20250121152122),
+(20250121151831),
+(20250121150757),
+(20250121150544),
+(20250121150335),
+(20250121144212),
+(20250121141509),
+(20250121141031),
+(20250121140314),
+(20250121135706),
+(20250121114231),
+(20250121110756),
+(20250121105636),
+(20250113170536),
+(20250113170422),
+(20250113170408),
+(20250113170401);[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-01-24 15:38:27.376320', '2025-01-24 15:38:27.376322') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-01-24 15:38:27.377638' WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '1c5ac4ecc2c59b32980cec08dfaad1683f9d1c55', '2025-01-24 15:38:27.379169', '2025-01-24 15:38:27.379170') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (0.9ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default_record") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 15:38:27.405316"], ["updated_at", "2025-01-24 15:38:27.405316"], ["name", "Event"], ["date", "2025-01-24"], ["time", "2000-01-01 15:38:27.400970"], ["default_record", 1]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "content", "default_record", "question_type") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-24 15:38:27.420079"], ["updated_at", "2025-01-24 15:38:27.420079"], ["content", "Do you have any feedback?"], ["default_record", 1], ["question_type", 0]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mQuestion Load (1.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
