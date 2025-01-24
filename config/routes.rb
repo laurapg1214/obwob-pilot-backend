@@ -6,9 +6,9 @@ Rails.application.routes.draw do
 
   # nesting all CRUD routes under namespace (adds /api in front of all routes)
   namespace :api do
-    # SESSIONS
-    post 'sessions' => 'sessions#create'
-    delete 'sessions' => 'sessions#destroy'
+    # # SESSIONS
+    # post 'sessions' => 'sessions#create'
+    # delete 'sessions' => 'sessions#destroy'
 
     # EVENTS 
     ### v2 ###
