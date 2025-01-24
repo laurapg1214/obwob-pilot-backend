@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   ## FIELDS ##
   # default role  0 (participant)
-  enum role: { participant: 0, facilitator: 1 }
+  enum :role, { participant: 0, facilitator: 1 }, prefix: true, default: 0
   validates :role, presence: true
 
   ## ASSOCIATIONS ##
@@ -21,9 +21,9 @@ class User < ApplicationRecord
 
   # assign default name based on role
   def assign_default_name
-    if facilitator?
+    if role_facilitator?
       self.name ||= 'Facilitator'
-    elseif participant?
+    elsif role_participant?
       self.name ||= 'Participant'
     end
   end

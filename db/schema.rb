@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_01_24_120629) do
+ActiveRecord::Schema[8.0].define(version: 2025_01_24_141930) do
   create_table "events", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
     t.date "date"
     t.time "time"
-    t.boolean "default", default: false
+    t.boolean "default_record", default: false
   end
 
   create_table "events_questions", id: false, force: :cascade do |t|
@@ -37,9 +37,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_24_120629) do
   create_table "questions", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "type", default: 0
+    t.integer "question_type", default: 0
     t.string "content"
-    t.boolean "default", default: false
+    t.boolean "default_record", default: false
   end
 
   create_table "responses", force: :cascade do |t|
@@ -49,7 +49,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_24_120629) do
     t.integer "event_id", null: false
     t.integer "question_id", null: false
     t.string "content"
-    t.boolean "default", default: false
+    t.boolean "default_record", default: false
     t.index ["event_id"], name: "index_responses_on_event_id"
     t.index ["question_id"], name: "index_responses_on_question_id"
     t.index ["user_id"], name: "index_responses_on_user_id"
@@ -61,7 +61,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_24_120629) do
     t.string "uuid", null: false
     t.integer "role", default: 0, null: false
     t.string "name"
-    t.boolean "default", default: false
+    t.boolean "default_record", default: false
     t.index ["uuid"], name: "index_users_on_uuid", unique: true
   end
 
