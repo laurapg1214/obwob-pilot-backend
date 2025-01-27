@@ -1,22 +1,18 @@
 class Api::QuestionsController < ApplicationController
+  include EventLookup
+  include QuestionLookup
   ### AT v3, REPLACE THIS WITH v3 VERSION BELOW ###
   def index
-    event = Event.find_by(id: params[:event_id])
-    unless event
-      render json: { message: "Event does not exist." }, status: :not_found
-      return
-    end
+    event = find_event
+    return unless event
 
     questions = event.questions
     render json: questions, status: :ok
   end
 
   def push
-    question = Question.find_by(id: params[:question_id])
-    unless question
-      render json: { message: "Question does not exist." }, status: :not_found
-      return
-    end
+    question = find_question
+    return unless question
 
     # use ActionCable to broadcast to Websocket channel
     ActionCable.server.broadcast(

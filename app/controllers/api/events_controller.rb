@@ -1,4 +1,13 @@
 class Api::EventsController < ApplicationController
+  include EventLookup
+
+  def index
+    event = find_event
+    return unless event
+
+    render json: event, status: :ok
+  end
+
   ### v2 ###
   ### AT v3, REPLACE THIS WITH v3 VERSION BELOW ###
   # def index

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   
   # set app root
-  root 'events#questions' 
+  root 'api/questions#index' 
 
   # nesting all CRUD routes under namespace (adds /api in front of all routes)
   namespace :api do
