@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_01_24_141930) do
+ActiveRecord::Schema[8.0].define(version: 2025_01_27_115557) do
   create_table "events", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -40,6 +40,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_24_141930) do
     t.integer "question_type", default: 0
     t.string "content"
     t.boolean "default_record", default: false
+    t.string "emoji_type"
   end
 
   create_table "responses", force: :cascade do |t|

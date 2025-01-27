@@ -683,3 +683,60 @@ FOREIGN KEY ("user_id")
   [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 1], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 0], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 1], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 0], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 1], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 0], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 1], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 0], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (0.9ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (0.2ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "events_users" ON "users"."id" = "events_users"."user_id" WHERE "events_users"."event_id" = ?[0m  [["event_id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (0.1ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (0.2ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "questions" INNER JOIN "events_questions" ON "questions"."id" = "events_questions"."question_id" WHERE "events_questions"."event_id" = ? AND "questions"."id" = ? LIMIT ?[0m  [["event_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses" WHERE "responses"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (10.2ms)[0m  [1m[34mSELECT "events".* FROM "events" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mResponse Load (0.5ms)[0m  [1m[34mSELECT "responses".* FROM "responses" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddEmojiTypeToQuestions (20250127115557)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "questions" ADD "emoji_type" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250127115557') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
