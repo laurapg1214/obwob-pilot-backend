@@ -1,21 +1,17 @@
 class Api::ResponsesController < ApplicationController
+  include QuestionLookup
+
   def index
-    question = Question.find_by(id: params[:question_id])
-    unless question
-      render json: { message: "Question does not exist." }, status: :not_found
-      return
-    end
+    question = find_question
+    return unless question
 
     responses = question.responses
     render json: responses, status: :ok 
   end
 
   def create
-    question = Question.find_by(id: params[:question_id])
-    unless question
-      render json: { message: "Question does not exist." }, status: :not_found
-      return
-    end
+    question = find_question
+    return unless question
 
     # validation: only emoji type questions can have numeric response_value
     if question.emoji? && !Response::EMOJI_VALUES.keys.include?(response_params[:response_value].to_i)
