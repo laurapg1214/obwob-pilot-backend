@@ -1840,3 +1840,392 @@ DEPRECATION WARNING: `to_time` will always preserve the full timezone rather tha
   [1m[36mQuestion Load (1.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (8.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "answers"[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_answers_on_event_id" ON "answers" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_questions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "events_questions" ("event_id" integer NOT NULL, "question_id" integer NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_event_id" ON "events_questions" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_question_id" ON "events_questions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_users" ("event_id" integer NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_event_id" ON "events_users" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_user_id" ON "events_users" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" integer DEFAULT 0, "text" varchar, "default_record" boolean DEFAULT 0, "emoji_type" varchar)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uuid" ON "users" ("uuid")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aanswers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_user_id" ON "aanswers" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_question_id" ON "aanswers" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_event_id" ON "aanswers" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aanswers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "answers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_a4147b4302"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_answers_on_event_id" ON "answers" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "answers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aanswers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aanswers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aanswers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_user_id" ON "aanswers" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_question_id" ON "aanswers" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_event_id" ON "aanswers" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aanswers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_a4147b4302"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_3d5ed4418f"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_event_id" ON "answers" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "answers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aanswers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aanswers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aanswers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_user_id" ON "aanswers" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_question_id" ON "aanswers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_event_id" ON "aanswers" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aanswers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_3d5ed4418f"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+, CONSTRAINT "fk_rails_a4147b4302"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_584be190c2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_event_id" ON "answers" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "answers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aanswers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aanswers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250128120048)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250128115856),
+(20250127115557),
+(20250124141930),
+(20250124130903),
+(20250124130313),
+(20250124120629),
+(20250124120344),
+(20250124120327),
+(20250124120313),
+(20250121152122),
+(20250121151831),
+(20250121150757),
+(20250121150544),
+(20250121150335),
+(20250121144212),
+(20250121141509),
+(20250121141031),
+(20250121140314),
+(20250121135706),
+(20250121114231),
+(20250121110756),
+(20250121105636),
+(20250113170536),
+(20250113170422),
+(20250113170408),
+(20250113170401);[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-01-28 12:25:20.769233', '2025-01-28 12:25:20.769235') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'b325c70960c6f9ada461ca3d75bf72c965c027f1', '2025-01-28 12:25:20.772082', '2025-01-28 12:25:20.772084') RETURNING "key"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "answers"[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_answers_on_event_id" ON "answers" ("event_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "date" date, "time" time, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_questions" ("event_id" integer NOT NULL, "question_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_event_id" ON "events_questions" ("event_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_questions_on_question_id" ON "events_questions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events_users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events_users" ("event_id" integer NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_event_id" ON "events_users" ("event_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_events_users_on_user_id" ON "events_users" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" integer DEFAULT 0, "text" varchar, "default_record" boolean DEFAULT 0, "emoji_type" varchar)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "uuid" varchar NOT NULL, "role" integer DEFAULT 0 NOT NULL, "name" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uuid" ON "users" ("uuid")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aanswers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_user_id" ON "aanswers" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_question_id" ON "aanswers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_event_id" ON "aanswers" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aanswers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_a4147b4302"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_event_id" ON "answers" ("event_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "answers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aanswers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aanswers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aanswers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_user_id" ON "aanswers" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_question_id" ON "aanswers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_event_id" ON "aanswers" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aanswers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "answers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_a4147b4302"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_3d5ed4418f"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_event_id" ON "answers" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "answers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aanswers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aanswers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aanswers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_user_id" ON "aanswers" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_question_id" ON "aanswers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aanswers_on_event_id" ON "aanswers" ("event_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "aanswers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "answers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, "event_id" integer NOT NULL, "question_id" integer NOT NULL, "content" varchar, "default_record" boolean DEFAULT 0, CONSTRAINT "fk_rails_3d5ed4418f"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+, CONSTRAINT "fk_rails_a4147b4302"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_584be190c2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_event_id" ON "answers" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "answers" ("id","created_at","updated_at","user_id","event_id","question_id","content","default_record")
+                     SELECT "id","created_at","updated_at","user_id","event_id","question_id","content","default_record" FROM "aanswers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aanswers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250128120048)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250128115856),
+(20250127115557),
+(20250124141930),
+(20250124130903),
+(20250124130313),
+(20250124120629),
+(20250124120344),
+(20250124120327),
+(20250124120313),
+(20250121152122),
+(20250121151831),
+(20250121150757),
+(20250121150544),
+(20250121150335),
+(20250121144212),
+(20250121141509),
+(20250121141031),
+(20250121140314),
+(20250121135706),
+(20250121114231),
+(20250121110756),
+(20250121105636),
+(20250113170536),
+(20250113170422),
+(20250113170408),
+(20250113170401);[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-01-28 12:25:20.872190', '2025-01-28 12:25:20.872192') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-01-28 12:25:20.873545' WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'b325c70960c6f9ada461ca3d75bf72c965c027f1', '2025-01-28 12:25:20.875152', '2025-01-28 12:25:20.875153') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent Create (0.1ms)[0m  [1m[32mINSERT INTO "events" ("created_at", "updated_at", "name", "date", "time", "default_record") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-28 12:25:20.916450"], ["updated_at", "2025-01-28 12:25:20.916450"], ["name", "Event"], ["date", "2025-01-28"], ["time", "2000-01-01 12:25:20.916278"], ["default_record", 1]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 1], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "uuid", "role", "name", "default_record") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-28 12:25:20.932544"], ["updated_at", "2025-01-28 12:25:20.932544"], ["uuid", "48cf5271-19a3-4ba6-971d-4eec9a9e98fc"], ["role", 1], ["name", "Asker"], ["default_record", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 0], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "uuid", "role", "name", "default_record") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-28 12:25:20.935394"], ["updated_at", "2025-01-28 12:25:20.935394"], ["uuid", "1bf98db5-a38c-44d7-b118-239a0140e733"], ["role", 0], ["name", "Answerer"], ["default_record", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (0.7ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "events_users" ON "users"."id" = "events_users"."user_id" WHERE "events_users"."event_id" = ?[0m  [["event_id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (0.7ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (4.4ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question_type", "text", "default_record", "emoji_type") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-28 12:25:20.983201"], ["updated_at", "2025-01-28 12:25:20.983201"], ["question_type", 0], ["text", "Do you have any feedback?"], ["default_record", 1], ["emoji_type", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mQuestion Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "questions" INNER JOIN "events_questions" ON "questions"."id" = "events_questions"."question_id" WHERE "events_questions"."event_id" = ? AND "questions"."id" = ? LIMIT ?[0m  [["event_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Questions Create (0.1ms)[0m  [1m[32mINSERT INTO "events_questions" ("event_id", "question_id") VALUES (?, ?)[0m  [["event_id", 1], ["question_id", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "answers" ("created_at", "updated_at", "user_id", "event_id", "question_id", "content", "default_record") VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["created_at", "2025-01-28 12:25:21.005706"], ["updated_at", "2025-01-28 12:25:21.005706"], ["user_id", 2], ["event_id", 1], ["question_id", 1], ["content", nil], ["default_record", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 1], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."role" = ? AND "users"."default_record" = ? LIMIT ?[0m  [["role", 0], ["default_record", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (0.2ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (1.1ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "events_users" ON "users"."id" = "events_users"."user_id" WHERE "events_users"."event_id" = ?[0m  [["event_id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (1.3ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.1ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[36mEvent::HABTM_Users Create (1.5ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 1]]
+  [1m[36mEvent::HABTM_Users Create (0.0ms)[0m  [1m[32mINSERT INTO "events_users" ("event_id", "user_id") VALUES (?, ?)[0m  [["event_id", 1], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "questions" INNER JOIN "events_questions" ON "questions"."id" = "events_questions"."question_id" WHERE "events_questions"."event_id" = ? AND "questions"."id" = ? LIMIT ?[0m  [["event_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."default_record" = ? LIMIT ?[0m  [["default_record", 1], ["LIMIT", 1]]
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+DEPRECATION WARNING: `to_time` will always preserve the full timezone rather than offset of the receiver in Rails 8.1. To opt in to the new behavior, set `config.active_support.to_time_preserves_timezone = :zone`. (called from <main> at /home/laurapg1214/impact-project/obwob-pilot/config/environment.rb:5)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
