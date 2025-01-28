@@ -1,4 +1,4 @@
-class Response < ApplicationRecord
+class Answer < ApplicationRecord
   ## ASSOCIATIONS ##
   belongs_to :event
   belongs_to :question

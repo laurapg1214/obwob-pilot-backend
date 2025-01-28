@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_01_27_115557) do
+ActiveRecord::Schema[8.0].define(version: 2025_01_28_120048) do
+  create_table "answers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.integer "event_id", null: false
+    t.integer "question_id", null: false
+    t.string "content"
+    t.boolean "default_record", default: false
+    t.index ["event_id"], name: "index_answers_on_event_id"
+    t.index ["question_id"], name: "index_answers_on_question_id"
+    t.index ["user_id"], name: "index_answers_on_user_id"
+  end
+
   create_table "events", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -38,22 +51,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_27_115557) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "question_type", default: 0
-    t.string "content"
+    t.string "text"
     t.boolean "default_record", default: false
     t.string "emoji_type"
-  end
-
-  create_table "responses", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "user_id", null: false
-    t.integer "event_id", null: false
-    t.integer "question_id", null: false
-    t.string "content"
-    t.boolean "default_record", default: false
-    t.index ["event_id"], name: "index_responses_on_event_id"
-    t.index ["question_id"], name: "index_responses_on_question_id"
-    t.index ["user_id"], name: "index_responses_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -66,7 +66,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_27_115557) do
     t.index ["uuid"], name: "index_users_on_uuid", unique: true
   end
 
-  add_foreign_key "responses", "events"
-  add_foreign_key "responses", "questions"
-  add_foreign_key "responses", "users"
+  add_foreign_key "answers", "events"
+  add_foreign_key "answers", "questions"
+  add_foreign_key "answers", "users"
 end
