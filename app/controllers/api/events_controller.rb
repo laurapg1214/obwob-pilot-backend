@@ -1,12 +1,34 @@
 class Api::EventsController < ApplicationController
-  include EventLookup
-
   def index
-    event = find_event
-    return unless event
-
-    render json: event, status: :ok
+    events = Event.all
+    render json: events, status: :ok
   end
+
+  def show
+    event = Event.find_by(id: params[:id])
+    if event
+      render json: event, status: :ok
+    else
+      render json: { message: "Event not found" }, status: :not_found
+    end
+  end
+
+
+  # include EventLookup
+
+  # def index
+  #   event = find_event
+  #   return unless event
+
+  #   # fetch questions for the event
+  #   questions = event.questions
+
+  #   # combine event details and questions in the response
+  #   render json: {
+  #     event: { name: event.name, id: event.id }, 
+  #     questions: questions 
+  #   }, status: :ok
+  # end
 
   ### v2 ###
   ### AT v3, REPLACE THIS WITH v3 VERSION BELOW ###

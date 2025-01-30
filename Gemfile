@@ -6,6 +6,8 @@ gem "rails_admin"
 gem "rails-erd"
 # CORS for interacting with React app
 gem "rack-cors"
+# serializer
+gem 'active_model_serializers'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 # Use sqlite3 as the database for Active Record
